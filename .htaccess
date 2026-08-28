@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Clean API URLs (optional - works with or without .php)
+RewriteRule ^api/validate/?$ api/validate.php [L,QSA]
+RewriteRule ^api/posts/?$ api/posts.php [L,QSA]
+RewriteRule ^api/licenses/?$ api/licenses.php [L,QSA]
+
+# Security
+Options -Indexes
